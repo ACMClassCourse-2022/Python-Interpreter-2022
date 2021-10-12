@@ -1,0 +1,3 @@
+[submodule "Apple-Pie-Interpreter"]
+	path = Apple-Pie-Interpreter
+	url = git@github.com:ACM-Programming-2021/Apple-Pie-Interpreter.git
