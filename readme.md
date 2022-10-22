@@ -88,3 +88,5 @@ CornerTest: 57 - 66 (10 pts)
 如果你想知道 `ctx` 大致是什么，参考：[3](docs/implementation_details.pdf)。
 
 如果你想知道怎么遍历树，参考：[4](docs/workflow_details.md#step-3-完成-srcevalvisitorh)
+
+如果你想看一个 demo 来理解这个作业，参考：[5](Apple-Pie-Interpreter)
