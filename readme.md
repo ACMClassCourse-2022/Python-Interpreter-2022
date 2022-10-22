@@ -89,4 +89,4 @@ CornerTest: 57 - 66 (10 pts)
 
 如果你想知道怎么遍历树，参考：[4](docs/workflow_details.md#step-3-完成-srcevalvisitorh)
 
-如果你想看一个 demo 来理解这个作业，参考：[5](Apple-Pie-Interpreter)
+如果你想看一个 demo 来理解这个作业，参考：[5](https://github.com/ACMClassCourse-2021/Apple-Pie-Interpreter/tree/ce35e602c6eba79cddbac0fe0f6830b14b4a8039)
