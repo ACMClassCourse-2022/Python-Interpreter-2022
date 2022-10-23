@@ -1,16 +1,39 @@
 # ANTLR in Python Interpreter
 
-## ANTLR 配置
+## 配置教程
 
-首先需要安装 `Java`。
+### 安装 Java
 
-在 WSL 中进入 `antlr-playground`，输入：
+在 WSL 中输入：
+
+```bash
+sudo apt-get update
+sudo apt-get install openjdk
+```
+
+若输入：
+
+```bash
+java --verion
+```
+
+能够显示其版本，则安装成功。
+
+### 配置 ANTLR
+
+在 WSL 中进入 `antlr-playground`，输入以配置 `Java`：
 
 ```bash
 export CLASSPATH=".:antlr-4.11.1-complete.jar:$CLASSPATH"
 ```
 
-接着配置 `grun`:
+接着配置 `antlr4`：
+
+```bash
+alias antlr4='java -jar antlr-4.11.1-complete.jar'
+```
+
+接着配置 `grun`：
 
 ```bash
 alias grun='java org.antlr.v4.gui.TestRig'
@@ -26,7 +49,7 @@ grun Python3 file_input -gui
 
 `-gui` 可替换为 `-tree` 将树以 `LISP` 形式输出。
 
-### 使用 -ps
+#### 使用 -ps
 
 在命令行中输入：
 
@@ -42,6 +65,7 @@ grun Python3 file_input -ps test.ps
 
 ```bash
 export CLASSPATH=".:[antlr-complete-jar]:$CLASSPATH"
+alias antlr4='java -jar [antlr-complete-jar]'
 alias grun='java org.antlr.v4.gui.TestRig'
 ```
 
