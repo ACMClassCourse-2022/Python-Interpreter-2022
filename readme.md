@@ -2,20 +2,20 @@
 
 ## 🧾 目录
 
-- [✨简介](#简介)
-- [📚作业说明](#作业说明)
-  - [⚠️实现要求](#%EF%B8%8F实现要求)
-  - [🛎️评测方式](#%EF%B8%8F评测方式)
+- [✨ 简介](#简介)
+- [📚 作业说明](#作业说明)
+  - [⚠️ 实现要求](#%EF%B8%8F实现要求)
+  - [🛎️ 评测方式](#%EF%B8%8F评测方式)
     - [提交方式](#提交方式)
     - [测试点分布](#测试点分布)
   - [🪙Bonus](#Bonus)
 - [📝Guide](#Guide)
-  - [📄语法](#语法)
+  - [📄 语法](#语法)
   - [⚙️ANTLR](#%EF%B8%8Fantlr)
-  - [🧪实现](#实现)
-  - [📇索引](#索引)
+  - [🧪 实现](#实现)
+  - [📇 索引](#索引)
 
-## ✨简介
+## ✨ 简介
 
 本次大作业要求你们实现一个简单的 Python 解释器，接受简化过的 Python 代码，按照控制流执行代码。
 
@@ -24,15 +24,15 @@
 > 解释器的好处是它不需要重新编译整个程序，从而减轻了每次程序更新后编译的负担。
 > 相对的编译器一次性将所有源代码编译成二进制文件，执行时无需依赖编译器或其他额外的程序。
 
-## 📚作业说明
+## 📚 作业说明
 
-### ⚠️实现要求
+### ⚠️ 实现要求
 
 1. 使用 OOP 实现 Python Interpreter，锻炼 OOP 能力。若不按照要求会在 code review 时扣除一定分数。
 2. 作业按数据总的通过比例线性给分。助教会下发部分数据在作业仓库中，还有另一部分数据不会提供。
    这意味着你需要自己手写测试数据给自己测试，如果你对自己造的数据是否满足要求有疑问，请及时向助教询问。
 
-### 🛎️评测方式
+### 🛎️ 评测方式
 
 使用 `git` 在 OJ 上进行提交。OJ 将根据根目录下的 `CMakeLists.txt` 来构建你的程序。
 
@@ -63,7 +63,7 @@ CornerTest: 57 - 66 (10 pts)
 
 ## 📝Guide
 
-### 📄语法
+### 📄 语法
 
 本次作业使用的 Python 的语法在 [Grammar](docs/grammar.md) 查看。
 
@@ -71,11 +71,11 @@ CornerTest: 57 - 66 (10 pts)
 
 关于 ANTLR 的安装与使用，详见 [ANTLR](docs/antlr_guide.md)。
 
-### 🧪实现
+### 🧪 实现
 
 如果你想知道从何下手，可以参考 [完成流程](docs/workflow_details.md) 与 [实现细节](docs/implementation_details.md)。
 
-### 📇索引
+### 📇 索引
 
 如果你想查看一段 Python 代码，通过 ANTLR 生成的语法树的结构，参考：[1](docs/antlr_guide.md#antlr-配置)。
 
@@ -83,6 +83,8 @@ CornerTest: 57 - 66 (10 pts)
 
 如果你想知道 `ctx` 大致是什么，参考：[3](docs/implementation_details.pdf)。
 
-如果你想知道怎么遍历树，参考：[4](docs/workflow_details.md#step-3-完成-srcevalvisitorh)
+如果你想知道怎么遍历树，参考：[4](docs/workflow_details.md#step-3-完成-srcevalvisitorh)。
 
-如果你想看一个 demo 来理解这个作业，参考：[5](https://github.com/ACMClassCourse-2021/Apple-Pie-Interpreter/tree/ce35e602c6eba79cddbac0fe0f6830b14b4a8039)
+如果你想看一个 demo 来理解这个作业，参考：[5](https://github.com/ACMClassCourse-2021/Apple-Pie-Interpreter/tree/ce35e602c6eba79cddbac0fe0f6830b14b4a8039)。
+
+如果你的 `grun Python3 file_input -gui` 无法弹窗，参考：[6](docs/antlr_guide.md#使用--ps)。

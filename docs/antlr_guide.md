@@ -34,7 +34,25 @@ grun Python3 file_input -gui
 grun Python3 file_input -ps test.ps
 ```
 
-之后在 `antlr-playground` 中会生成 `test.ps`，之后寻找将 PS 转化为 PNG 的在线转化器，上传 `test.ps`，即可得到相应的 `png` 文件。
+之后在 `antlr-playground` 中会生成 `test.ps`。一般来说，电脑上的 PDF 阅读器都可以成功打开 `.ps` 文件（双击打开即可），如果无法打开寻找将 PS 转化为 PNG 的在线转化器，上传 `test.ps`，即可得到相应的 `.png` 文件。
+
+### 配置至 .bashrc 或 .zshrc
+
+将：
+
+```bash
+export CLASSPATH=".:[antlr-complete-jar]:$CLASSPATH"
+alias grun='java org.antlr.v4.gui.TestRig'
+```
+
+其中 `[antlr-complete-jar]` 表示的是 `antlr-4.11.1-complete.jar` 的绝对地址。在将上述命令输入至 `.bashrc` 或 `.zshrc` 之后，在命令行中输入：
+
+```bash
+source .bashrc
+source .zshrc
+```
+
+有 `.bashrc` 选择前者，有 `.zshrc` 选择后者。即可在重新打开 WSL 的时候无需重新配置。
 
 ## ANTLR 是什么
 
