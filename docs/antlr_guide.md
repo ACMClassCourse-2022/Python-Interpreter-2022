@@ -42,10 +42,13 @@ alias grun='java org.antlr.v4.gui.TestRig'
 之后，在命令行中输入：
 
 ```bash
+antlr4 Python3Lexer.g4
+antlr4 Python3Parser.g4
+javac *.java
 grun Python3 file_input -gui
 ```
 
-然后输入相应的 `Python` 代码，以 `EOF` 结束（Command-D 或 Ctrl-D），便会弹出一个弹窗，展示代码对应的树形结构。如果没有弹窗，参考[](#使用--ps)
+前两条命令只在初始时需要，第三条命令在每次生成新的语法树是都需要。然后终端会等待你输入相应的 `Python` 代码，以 `EOF` 结束（Ctrl-D），便会弹出一个弹窗，展示代码对应的树形结构。如果没有弹窗，参考[](#使用--ps)
 
 `-gui` 可替换为 `-tree` 将树以 `LISP` 形式输出。
 
