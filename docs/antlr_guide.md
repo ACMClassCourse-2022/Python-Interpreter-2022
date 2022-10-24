@@ -1,5 +1,35 @@
 # ANTLR in Python Interpreter
 
+## 使用 generate
+
+如果你不想配置以下内容，可以使用助教提供的脚本，有两种方法使用：
+
+### 使用 bash
+
+在 WSL 中进入 `antlr-playground`，输入：
+
+```bash
+bash generate
+```
+
+之后在命令行中输入 Python 代码即可。
+
+### 使用 chmod
+
+在 WSL 中进入 `antlr-playground`，输入：
+
+```bash
+chmod +x generate
+```
+
+以上为初次配置，之后使用时：
+
+```bash
+./generate
+```
+
+之后在命令行中输入 Python 代码即可。
+
 ## 配置教程
 
 ### 安装 Java
@@ -72,14 +102,14 @@ alias antlr4='java -jar [antlr-complete-jar]'
 alias grun='java org.antlr.v4.gui.TestRig'
 ```
 
-其中 `[antlr-complete-jar]` 表示的是 `antlr-4.11.1-complete.jar` 的绝对地址。在将上述命令输入至 `.bashrc` 或 `.zshrc` 之后，在命令行中输入：
+其中 `[antlr-complete-jar]` 表示的是 `antlr-4.11.1-complete.jar` 的绝对地址。在将上述命令输入至 `~/.bashrc` 或 `~/.zshrc` 之后，在命令行中输入：
 
 ```bash
-source .bashrc
-source .zshrc
+source ~/.bashrc
+source ~/.zshrc
 ```
 
-有 `.bashrc` 选择前者，有 `.zshrc` 选择后者。即可在重新打开 WSL 的时候无需重新配置。
+注意，有 `.bashrc` 选择前者，有 `.zshrc` 选择后者。即可在重新打开 WSL 的时候无需重新配置。
 
 ### 使用 Clion 插件
 
