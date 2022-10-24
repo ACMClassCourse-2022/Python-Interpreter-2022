@@ -81,6 +81,22 @@ source .zshrc
 
 有 `.bashrc` 选择前者，有 `.zshrc` 选择后者。即可在重新打开 WSL 的时候无需重新配置。
 
+### 使用 Clion 插件
+
+由于本次 `.g4` 文件的特性，目前 ANTLR 插件只能支持不带 `INDENT` 和 `DEDENT` 规则的解释。
+
+首先在插件市场中找到插件：
+
+[](docs/plugin-market.png)
+
+安装后，右键 `.g4` 中的 `return_stmt` 或任何不包含 `INDENT` 和 `DEDENT` 的规则，点击 `test rule`：
+
+[](docs/right-click.png)
+
+之后在屏幕下方的 `antlr-preview` 中，左侧是待测试的代码，右侧是依据代码生成的语法树结构图。
+
 ## ANTLR 是什么
+
+ANTLR（全名：ANother Tool for Language Recognition）是基于 LL(\*)算法实现的语法解析器生成器（parser generator），用 Java 语言编写，使用自上而下（top-down）的递归下降 LL 剖析器方法。
 
 ANTLR 可以将输入的代码转化成与之对应的**树形结构**，即语法树，以便后续程序操作。语法树是什么，进入 `antlr-playground` 按照 [配置](#antlr-配置) 操作，即可得到一份 `Python` 代码对应的语法树。
