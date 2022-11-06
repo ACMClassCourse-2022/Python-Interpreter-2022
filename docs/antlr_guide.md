@@ -38,7 +38,7 @@ chmod +x generate
 
 ```bash
 sudo apt-get update
-sudo apt-get install openjdk
+sudo apt-get install openjdk-17-jdk
 ```
 
 若输入：
