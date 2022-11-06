@@ -44,7 +44,7 @@ sudo apt-get install openjdk-17-jdk
 若输入：
 
 ```bash
-javac --verion
+javac --version
 ```
 
 能够显示其版本，则安装成功。
